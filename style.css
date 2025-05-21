@@ -1,0 +1,95 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #002f6c, #004aad, #007bff);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      background: #ffffff;
+      width: 360px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      text-align: center;
+    }
+
+
+
+    .button {
+      background-color: #002f6c;
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background-color: #004aad;
+      transform: translateY(-2px);
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 1rem;
+    }
+    
+    .logo{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+
+   .img {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 20px;
+    }
+
+   .img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+   }
+
+    .map-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+      color: #002f6c;
+      text-decoration: none;
+      font-weight: bold;
+      justify-content: flex-start;
+      transition: color 0.3s;
+    }
+
+ 
